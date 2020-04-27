@@ -1,0 +1,164 @@
+*::after, *::before, html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    width: 100%;
+}
+
+div#options {
+    width: 70%;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 10px auto;
+    background: #d9d9d9;
+    flex-direction: column;
+}
+
+.cabezera {
+    margin: 20px 20px 10px 20px;
+}
+
+body {
+    background: #e6e6e6;
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 20px 20px 20px;
+}
+
+.datos {
+    margin: 20px;
+    text-align: center;
+}
+
+.tablas {
+    height: 90%;
+}
+
+div#iniciales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div#procedimientos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div#finales {
+    display: flex;
+    justify-content: center;
+}
+
+div#resultados {
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 15px;
+}
+
+table {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+td {
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.titulo {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.subtitulo {
+    text-align: center;
+}
+
+.informacion {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.advertencia p {
+    border-radius: 4px;
+    background:  #f2f2f2;
+    display: inline;
+    padding: 5px;
+}
+
+.advertencia {
+    margin: 10px;
+}

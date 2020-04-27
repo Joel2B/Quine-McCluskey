@@ -1,0 +1,8 @@
+[user]
+	name = Joel Bueno
+	email = jbuenouas@gmail.com
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+	interactive = auto
