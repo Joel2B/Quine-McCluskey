@@ -5,6 +5,27 @@ document.querySelector("#calcular").addEventListener('click', function () {
     }
 })
 
+document.querySelector("#b1").addEventListener('click', function (e) {
+    document.querySelector("#entrada").value = e.srcElement.parentElement.parentElement.querySelectorAll("div")[1].querySelector("div").textContent;
+})
+
+document.querySelector("#b2").addEventListener('click', function (e) {
+    document.querySelector("#entrada").value = e.srcElement.parentElement.parentElement.querySelectorAll("div")[1].querySelector("div").textContent;
+})
+
+document.querySelector("#b3").addEventListener('click', function (e) {
+    document.querySelector("#entrada").value = e.srcElement.parentElement.parentElement.querySelectorAll("div")[1].querySelector("div").textContent;
+})
+
+document.querySelector("#b4").addEventListener('click', function (e) {
+    document.querySelector("#entrada").value = e.srcElement.parentElement.parentElement.querySelectorAll("div")[1].querySelector("div").textContent;
+})
+
+document.querySelector("#borrar").addEventListener('click', function (e) {
+    document.querySelector("#entrada").value = "";
+})
+
+// FUNCIONALIDAD
 function app(entrada) {
     let abc = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
@@ -19,8 +40,8 @@ function app(entrada) {
     // let input = "0,1,2,3,7,8,11,12,13,14";
     // let input = "0,1,3,4,6,7,8,9,11,12,13,14,15";
     // let input = "1,3,5,6,7,9,11,13,14,15,17,19,21,22,23,24,25,26,27,28,29,30,31";
-    
-    let splitInput = entrada.split(',');
+
+    let splitInput = entrada.trim().split(',');
 
     let variable = 2;
 

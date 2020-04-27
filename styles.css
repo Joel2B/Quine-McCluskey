@@ -10,7 +10,10 @@ html, body {
 }
 
 div#options {
-    width: 70%;
+    /* width: 70%; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .contenedor {
@@ -37,6 +40,7 @@ body {
     justify-content: center;
     flex-direction: column;
     margin: 10px 20px 20px 20px;
+    word-break: break-all;
 }
 
 .datos {
@@ -161,4 +165,32 @@ input[type=text]:focus {
 
 .advertencia {
     margin: 10px;
+}
+
+.block {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.block button {
+    background: #4CAF50;
+    text-decoration: none;
+    border: none;
+    padding: 5px 16px;
+    margin-right: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+div#borrar {
+    position: relative;
+    left: 47%;
+    bottom: 36px;
+    display: inline;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
 }
