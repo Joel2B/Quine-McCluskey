@@ -107,7 +107,7 @@ function app(entrada) {
 
     for (let i = 0; i < variable; i++) {
         s[i] = 0;
-        insert += "<th>" + abc[i].toUpperCase() + "</th>";
+        tabla1 += "<th>" + abc[i].toUpperCase() + "</th>";
     }
 
     tabla1 += "<th>indice</th></tr></thead><tbody>";
